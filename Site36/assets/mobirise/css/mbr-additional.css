@@ -1019,8 +1019,8 @@ section.lazy-placeholder:after {
 .cid-rXheybpulM .navbar {
   background: #ffffff;
   transition: none;
-  min-height: 77px;
-  padding: .5rem 0;
+  /* min-height: 77px; */
+  /* padding: .5rem 0; */
 }
 .cid-rXheybpulM .navbar-dropdown.bg-color.transparent.opened {
   background: #ffffff;
