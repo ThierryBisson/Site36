@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
+<!-- Les deux lignes suivantes pour charger shadowbox pour l'annonce covid -->
+  <link rel="stylesheet" type="text/css" href="assets/Shadow/shadowbox.css">
+  <script type="text/javascript" src="assets/Shadow/shadowbox.js"></script>
 
 
 </head>
@@ -316,6 +319,23 @@
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
 
+<!-- Le script sensé ouvrir une shadowbox à l'ouverture -->
+  <script type="text/javascript">
+      Shadowbox.init({
+          skipSetup: true
+      });
+
+      window.onload = function() {
+
+          Shadowbox.open({
+              content:    "assets/images/annonce.png",
+              player:     "img",
+              title:      "",
+              height:     200,
+              width:      400
+          });
+      }
+      </script>
 
 </body>
 </html>
